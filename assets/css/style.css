@@ -56,60 +56,203 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+/* Hero */
 .hero {
     background-image: url("../images/about-me-background.jpg");
     background-size: cover;
     height: 300px;
-}
-
-.section-label {
-    text-align: right;
-    content: 10%;
-    justify-content: center;
-    align-items: center;
-    height: 20%;
-    top: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .hero-subtitle {
-    text-align: end;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 20px;
 }
 
-.content {
-    width: 50%;
+/* grid */
+.work-grid-container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    grid-auto-flow: dense;
+    align-self: stretch;
+}
+
+.grid-item {
+    background-color: orange;
+    border: solid;
+    border-color: teal;
+    padding: 10px, 0;
+    color: black;
+    justify-content: left;
+    align-items: flex-end;
+    text-align: left;
+    display: flex;
+  }
+ 
+  .run-buddy {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 325px;
+    background-image: url("../images/run-buddy.jpg");
+  }
+
+  .project-label {
     padding: 10px;
-    margin-left: auto;
-}
-
-section div {
-    display: inline-block;
-}
-
-section h2 {
-    ;
-}
-
-footer nav ul {
+    background: #024376;
+    color: var(--primary-color);
+    height: 100px;
+    width: 200px;
     display: flex;
     flex-wrap: wrap;
+}
+
+ .project-img {
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+ }
+
+ .project-img h4 {
+     z-index: 9500;
+    font-size: 28px;
+    position: relative;
+}
+
+.project-img h5 {
+    z-index: 9500;
+    font-size: 22px;
+    position: relative;
+}
+
+.project-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.7;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), #024e76);   
+}
+
+.project-img:hover::after {
+    opacity: 1;
+
+}
+  
+.step {
+     margin: 50px auto;
+     padding-bottom: 50px;
+     width: 90%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     border-bottom: 1px solid var(--tertiary-color);
+ }
+ 
+ .step:last-child {
+     border-bottom: none;
+ }
+ 
+ .step h3 {
+     color: var(--secondary-color);
+     font-size: 60px;
+     flex: 1 5%;
+     text-align: right;
+     padding-right: 20px;
+ }
+ 
+ .step-info {
+     flex: 2 60%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+ }
+ 
+  /* alloted 12 times more unused space than step-image */
+ .step-text {
+     flex: 12;
+     border-left: solid;
+     padding: 20px;
+ }
+ 
+ .step-text p {
+     color: var(--tertiary-color);
+     font-size: 18px;
+ }
+ 
+ .step-text h4 {
+     font-size: 26px;
+     line-height: 1.5;
+     color: var(--secondary-color);
+ }
+ /* main body styling */
+
+ /*Contact me section */
+ .bottom {
+    padding: 20px 50px;
+    display: flex;
+    flex: 12;
     justify-content: space-between;
-    justify-items: right;
-    align-items: center;
+    flex-wrap: wrap;
+    border-left: solid;
+}
+
+.bottom h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.bottom a {
+    text-decoration: none;
+    color: black;
+    border-bottom: solid;
+}
+
+.bottom nav {
+    margin: 7px 10px;
+}
+
+.bottom nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
     list-style: none;
 }
 
-footer nav ul li a {
+.bottom nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex: 1;
 }
 
-.section-label {
-    font-size: 20px;
+.bottom nav ul li a:hover {
     color: var(--secondary-color);
-    border-right: 3px solid;
-    padding-right: 20px;
-    text-align: end;
-    margin: 0 auto 35px auto;
-    width: 20%;
+    text-shadow: none;
+    background-color: black;
+}
