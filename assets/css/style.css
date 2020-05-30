@@ -274,7 +274,7 @@ button {
     justify-content: space-evenly;
     list-style: none;
 }
-
+/* change these for media quieries */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -291,3 +291,4 @@ button {
     grid-column: span 8;
     grid-row: span 2;
 }
+/* change these for media queries */
