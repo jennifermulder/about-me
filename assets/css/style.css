@@ -85,18 +85,14 @@ header nav ul li a:hover {
 
 /* grid */
 .work-grid-container {
-    max-width: auto;
     margin: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 15px;
-    grid-auto-flow: dense;
-    align-self: stretch;
+   
 }
 
 .grid-item {
-    background-color: orange;
     border: solid;
     border-color: teal;
     padding: 10px, 0;
@@ -113,15 +109,47 @@ header nav ul li a:hover {
     grid-row-start: 1;
     grid-row-end: 3;
     background-image: url("../images/run-buddy.jpg");
-    
   }
 
+  .password {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url("../images/password.jpg");
+  }
+
+  .weather {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url("../images/weather.jpg");
+  }
+
+  .api {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url("../images/api.jpg");
+  }
+
+  .schedule {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url("../images/schedule.jpg");
+    
+  }
   .project-label {
     padding: 10px;
     background: #024376;
     color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
+    z-index: 9000;
 }
 
  .project-img {
@@ -135,8 +163,8 @@ header nav ul li a:hover {
  }
 
  .project-img h4 {
-     z-index: 9500;
-    font-size: 28px;
+    z-index: 9500;
+    font-size: 20px;
     position: relative;
 }
 
@@ -164,7 +192,7 @@ header nav ul li a:hover {
 }
 
 button {
-    
+
 }
   
 .step {
