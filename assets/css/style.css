@@ -69,8 +69,7 @@ header nav ul li a:hover {
     background-image: url("../images/profile-photo.jpg");
     height: 250px;
     width: 250px;
-
-    
+       
 }
 
 .hero-subtitle {
@@ -245,3 +244,120 @@ header nav ul li a:hover {
     justify-content: space-evenly;
     list-style: none;
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .step-text p {
+        font-size: 20px;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .password {
+        background-size: initial;
+    }
+
+    .weather {
+        background-size: initial;
+    }
+
+    .grid-item {
+        width: 600px;
+        height: 100px;
+        margin: 20px auto;
+    }
+    .grid-item h4 {
+        z-index: 9500;
+        font-size: 20px;
+        position: relative;
+    }
+    
+    .grid-item h5 {
+        z-index: 9500;
+        font-size: 15px;
+        position: relative;
+    }
+
+    .contact ul li a {
+        font-size: 20px;
+        border-bottom: none;
+        display: block;
+    }
+   
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .steps h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+         
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    .grid-item {
+        width: 300px;
+        height: 50px;
+        margin: 20px auto;
+    }
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 375px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;       
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 250px;  
+    }
+
+    .steps h3 {
+        font-size: 20px;
+        text-decoration: underline black;
+        padding: 0;
+    }
+
+    .step-text {
+        border-left: none;
+    }
+
+    .contact ul {
+        padding: 0;
+    }
