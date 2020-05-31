@@ -92,80 +92,39 @@ header nav ul li a:hover {
    
 }
 
-.grid-item {
-    border: solid;
-    border-color: teal;
-    padding: 70px, 0;
-    color: black;
-    justify-content: left;
-    align-items: flex-end;
-    text-align: left;
-    display: flex;
-}
- 
   .run-buddy {
-    grid-column:span 2;
-    grid-row: span 2;
-    grid-row-end: 3;
     background-image: url("../images/run-buddy.jpg");
     background-size: cover;
-    display: flex;
-    padding: 15px;
-    align-items: flex-end;
     position: relative;
-    min-height: 400px;
   }
 
   .password {
-    grid-column: span 1;
-    grid-row: span 1;
     background-image: url("../images/password.jpg");
     background-size: cover;
-    display: flex;
-    padding: 15px;
-    align-items: flex-end;
     position: relative;
-    min-height: 200px;
-  }
+ }
 
   .weather {
-    grid-column: span 1;
-    grid-row: span 1;
     background-image: url("../images/weather.jpg");
     background-size: cover;
-    display: flex;
-    padding: 15px;
-    align-items: flex-end;
     position: relative;
-    min-height: 200px;
-  }
+ }
 
   .api {
-    grid-column: span 1;
-    grid-row: span 1;
     background-image: url("../images/api.jpg");
     background-size: cover;
-    display: flex;
-    padding: 15px;
-    align-items: flex-end;
     position: relative;
-    min-height: 200px;
+    
   }
 
   .schedule {
-    grid-column: span 1;
-    grid-row: span 1;
     background-image: url("../images/schedule.jpg");
     background-size: cover;
-    display: flex;
-    padding: 15px;
-    align-items: flex-end;
     position: relative;
-    min-height: 200px;
+    
 }
 
    .project-label {
-    padding: 10px;
     background: #024376;
     color: var(--primary-color);
     display: flex;
@@ -173,35 +132,20 @@ header nav ul li a:hover {
     z-index: 9000;
 }
 
- .project-img {
-    background-size: cover;
-    display: flex;
-    padding: 15px;
-    align-items: flex-end;
-    min-height: 500px;
- }
-
- .project-img1 {
-    background-size: cover;
-    display: flex;
-    padding: 15px;
-    align-items: flex-end;
-    min-height: 250px;
- }
-
- .project-img h4, .project-img1 h4 {
+ 
+ .grid-item h4 {
     z-index: 9500;
     font-size: 20px;
     position: relative;
 }
 
-.project-img h5, .project-img1 h5 {
+.grid-item h5 {
     z-index: 9500;
     font-size: 22px;
     position: relative;
 }
 
-.project-img::after, .project-img1::after {
+.grid-item::after {
     content: "";
     height: 100%;
     width: 100%;
@@ -213,15 +157,11 @@ header nav ul li a:hover {
     background: linear-gradient(rgba(252, 225, 56, 0.3), #024e76);   
 }
 
-.project-img:hover::after, .project-img1:hover::after {
+.grid-item:hover::after {
     opacity: 1;
 
 }
 
-button {
-
-}
-  
 .step {
      margin: 50px auto;
      padding-bottom: 50px;
@@ -308,7 +248,16 @@ button {
 
 .gi {
     grid-column: span 4;
-    border: 3px dashed black;
+}
+
+.grid-item {
+    border: solid;
+    border-color: teal;
+    padding: 70px 0;
+    justify-content: left;
+    align-items: flex-end;
+    text-align: left;
+    display: flex;
 }
 
 .special {
