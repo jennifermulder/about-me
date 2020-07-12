@@ -138,6 +138,11 @@ header nav ul li a:hover {
     opacity: 1;
 }
 
+.explore {
+    background-image: url("../images/hike-finder.jpg");
+    background-size: cover;
+    position: relative;
+}
 .run-buddy {
     background-image: url("../images/run-buddy.jpg");
     background-size: cover;
