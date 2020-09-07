@@ -10,7 +10,7 @@ A website that offers my complete portfolio of projects
 * CSS
 
 ## Website
-https://jennifer.mulder.github.io/about-me/
+https://jennifermulder.github.io/about-me/
 
 ## Project Status
 Project will continue to be updated when new projects have been completed
